@@ -1,0 +1,7 @@
+<div>
+    <h1>Quote Hub</h1>
+    <p *ngFor='let quote of quotes'>
+      {{quote.title}}
+      <app-quote-detail [quote]='quote'></app-quote-detail>
+    </p>
+ </div>

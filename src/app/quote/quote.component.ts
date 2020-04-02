@@ -9,10 +9,10 @@ import { Quote } from '../quote';
 export class QuoteComponent implements OnInit {
 
   quotes:Quote[] = [
-   new Quote (1, 'Talk less but talk sense', 'Kevin'),
-   new Quote (2, 'Talk less but talk sense', 'Luke'),
-   new Quote (3, 'Talk less but talk sense', 'Munene'),
-   new Quote (4, 'Talk less but talk sense', 'Kimathi'),
+   new Quote (1, 'Talk less but talk sense', 'Kevin', new Date(2020,1,1)),
+   new Quote (2, 'Talk less but talk sense', 'Luke', new Date(2020,2,2)),
+   new Quote (3, 'Talk less but talk sense', 'Munene', new Date(2020,3,1)),
+   new Quote (4, 'Talk less but talk sense', 'Kimathi', new Date(2020,4,1)),
   ];
 
   toggleDetails(index){

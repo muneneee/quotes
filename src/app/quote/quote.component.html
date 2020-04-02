@@ -1,7 +1,10 @@
-<div>
-    <h1>Quote Hub</h1>
-    <p *ngFor='let quote of quotes'>
+<h1>Quote Hub</h1>
+  <div *ngFor='let quote of quotes;let i =index'>
+    <p>
       {{quote.title}}
-      <app-quote-detail [quote]='quote'></app-quote-detail>
+
+    <button (click)='toggleDetails(i)'>Details</button>
+
+      <app-quote-detail *ngIf='quote.showDescription' [quote]='quote' (isComplete) = 'completeQuote($event,1)'></app-quote-detail>
     </p>
- </div>
+  </div>

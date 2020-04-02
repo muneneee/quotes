@@ -9,15 +9,20 @@ import { Quote } from '../quote';
 export class QuoteComponent implements OnInit {
 
   quotes:Quote[] = [
-    {id:1, title:'Talk less but talk sense', description:'Kevin'},
-    {id:2, title:'Talk less but talk sense', description:'Kevo'},
-    {id:3, title:'Talk less but talk sense', description:'Munene'},
-    {id:4, title:'Talk less but talk sense', description:'Kimathi'},
+   new Quote (1, 'Talk less but talk sense', 'Kevin'),
+   new Quote (2, 'Talk less but talk sense', 'Luke'),
+   new Quote (3, 'Talk less but talk sense', 'Munene'),
+   new Quote (4, 'Talk less but talk sense', 'Kimathi'),
   ];
 
+  toggleDetails(index){
+    this.quotes[index].showDescription = !this.quotes[index].showDescription;
+  }
+
+  
   constructor() { }
 
-  ngOnInit(): void {
+  ngOnInit() {
   }
 
 }

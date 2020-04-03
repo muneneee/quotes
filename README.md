@@ -15,3 +15,5 @@ I have not encountered bugs so far but if any is found, feel free to contact me.
   
  ## Contact details
  Contact me through email lukekevin39@gmail.com  for any enquiries,bugs or corrections.
+## License
+Mit license

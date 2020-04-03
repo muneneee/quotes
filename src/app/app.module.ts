@@ -9,6 +9,7 @@ import { QuoteDetailComponent } from './quote-detail/quote-detail.component';
 import { DaysCountPipe } from './days-count.pipe';
 import { UpvoteComponent } from './upvote/upvote.component';
 import { QuoteFormComponent } from './quote-form/quote-form.component';
+import { HighlightDirective } from './highlight.directive';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { QuoteFormComponent } from './quote-form/quote-form.component';
     DaysCountPipe,
     UpvoteComponent,
     QuoteFormComponent,
+    HighlightDirective,
     
   ],
   imports: [

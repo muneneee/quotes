@@ -3,7 +3,7 @@ created by
 #### Kevin Munene
 
 ## Description
-[Quotes Hub]{https://muneneee.github.io/quotes/} is an application that allows user to enter quotes and delete them at their pleasure.The user can view previously posted quotes and vote on them.The duration of a post in the website is also keeped track of.
+Quotes Hub{https://muneneee.github.io/quotes/} is an application that allows user to enter quotes and delete them at their pleasure.The user can view previously posted quotes and vote on them.The duration of a post in the website is also keeped track of.
 
 ## Bugs
 I have not encountered bugs so far but if any is found, feel free to contact me.My details are provided at the bottom.

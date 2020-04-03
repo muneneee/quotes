@@ -1,5 +1,5 @@
-<p>Author:{{quote.description}}</p>    
-<p> Posted on {{quote.entryDate| daysCount}}</p>
+<p style="font-size: 28px;">Author:{{quote.description}}</p>    
+<p style="font-size: 28px;"> Posted  {{quote.entryDate| daysCount}}</p>
 <app-upvote></app-upvote>
 <hr>
-<button (click)= 'quoteComplete(true)' class="btn btn-outline-danger btn-sm">Delete Quote</button>
+<button (click)= 'quoteComplete(true)' class="btn btn-danger btn-sm">Delete Quote</button>

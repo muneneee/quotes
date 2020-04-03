@@ -1,11 +1,11 @@
-<h1 class="text-center">Quote Hub</h1>
+<h1 class="text-center" style="font-family: 'Do Hyeon', sans-serif; font-size: 70px;">Quote Hub</h1>
 <hr>
 <div class="container">
   <div class="card-columns">
     <div class="card" *ngFor='let quote of quotes;let i = index' style="background-color:slategrey;">
       
         <div class="card-body">
-              <p>{{quote.title}}</p>
+              <p style="font-family: 'Do Hyeon', sans-serif; font-size: 40px;">{{quote.title}}</p>
               <button (click)='toggleDetails(i)' class="btn btn-info btn-sm">Details</button>
               <app-quote-detail *ngIf='quote.showDescription' [quote]='quote' (isComplete) = 'completeQuote($event,i)'></app-quote-detail>
         </div>
@@ -17,6 +17,6 @@
 <div style="padding-left:600px;">
   <button (click) = "toggleDisplay()" class="btn btn-info btn-lg">Add Quote</button>
 </div>
-<div class="col-md-6" [hidden] = "isDisplay">
+<div class="col-md-10" [hidden] = "isDisplay" style="padding-left: 350px; padding-bottom: 50px;">
   <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
 </div>

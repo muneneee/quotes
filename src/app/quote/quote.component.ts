@@ -19,6 +19,11 @@ export class QuoteComponent implements OnInit {
     this.quotes[index].showDescription = !this.quotes[index].showDescription;
   }
 
+  isDisplay = true;
+  toggleDisplay(){
+    this.isDisplay = !this.isDisplay;
+  }
+
   completeQuote(isComplete, index){
     if (isComplete){
       let toDelete = confirm(`Are you sure you want to delete ${this.quotes[index].title}?`)
@@ -33,7 +38,7 @@ export class QuoteComponent implements OnInit {
   addNewQuote(quote){
     let quotesLength=this.quotes.length+1
 
-    let quoteObject= new Quote(quotesLength,quote.title,quote.description,new Date,quote.quote,0,0,false);
+    let quoteObject= new Quote(quotesLength,quote.title,quote.description,new Date,);
 
     this.quotes.push(quoteObject);
   }

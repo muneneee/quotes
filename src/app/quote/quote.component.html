@@ -2,7 +2,7 @@
 <hr>
 <div class="container">
   <div class="card-columns">
-    <div class="card" *ngFor='let quote of quotes;let i = index'>
+    <div class="card" *ngFor='let quote of quotes;let i = index' style="background-color:slategrey;">
       
         <div class="card-body">
               <p>{{quote.title}}</p>
@@ -13,6 +13,10 @@
     </div>
   </div>
 </div>
-<div class="col-md-6">
+<hr>
+<div style="padding-left:600px;">
+  <button (click) = "toggleDisplay()" class="btn btn-info btn-lg">Add Quote</button>
+</div>
+<div class="col-md-6" [hidden] = "isDisplay">
   <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
 </div>

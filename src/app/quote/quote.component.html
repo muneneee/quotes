@@ -1,11 +1,14 @@
-<h1 class="text-center" style="font-family: 'Do Hyeon', sans-serif; font-size: 70px;">Quote Hub</h1>
+<h1 class="text-center" style="font-family: 'Do Hyeon', sans-serif; font-size: 70px; text-decoration: underline;">Quote Hub</h1>
 <hr>
+<p class="text-center" style="font-family: 'Do Hyeon', sans-serif; font-size: 25px;">Welcome to QUOTE HUB where you let the world see your quotes and let them decide if it is as good as you are.You can also view other quotes from different people and like or dislike them.</p>
+<hr>
+<h2 class="text-center" style="font-family: 'Do Hyeon', sans-serif; font-size: 55px;">The quotes</h2>
 <div class="container">
   <div class="card-columns">
-    <div class="card" *ngFor='let quote of quotes;let i = index' style="background-color:slategrey;">
+    <div class="card" *ngFor='let quote of quotes;let i = index' style="background-color:turquoise;">
       
         <div class="card-body">
-              <p style="font-family: 'Do Hyeon', sans-serif; font-size: 40px;">{{quote.title}}</p>
+              <p style="font-family: 'Do Hyeon', sans-serif; font-size: 30px;">{{quote.title}}</p>
               <button (click)='toggleDetails(i)' class="btn btn-info btn-sm">Details</button>
               <app-quote-detail *ngIf='quote.showDescription' [quote]='quote' (isComplete) = 'completeQuote($event,i)'></app-quote-detail>
         </div>

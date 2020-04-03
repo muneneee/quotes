@@ -9,10 +9,12 @@ import { Quote } from '../quote';
 export class QuoteComponent implements OnInit {
 
   quotes:Quote[] = [
-   new Quote (1, 'Talk less but talk sense', 'Kevin', new Date(2020,1,1)),
-   new Quote (2, 'Talk less but talk sense', 'Luke', new Date(2020,2,2)),
-   new Quote (3, 'Talk less but talk sense', 'Munene', new Date(2020,3,1)),
-   new Quote (4, 'Talk less but talk sense', 'Kimathi', new Date(2020,4,1)),
+   new Quote (1, 'The greatest glory in living lies not in never falling, but in rising every time we fall.', 'Nelson Mandela', new Date(2017,1,1)),
+   new Quote (2, 'The way to get started is to quit talking and begin doing.', 'Walt Disney', new Date(2020,2,2)),
+   new Quote (3, 'If life were predictable it would cease to be life, and be without flavor.', 'Eleanor Roosevelt', new Date(2019,3,1)),
+   new Quote (4, "Your time is limited, so don't waste it living someone else's life. Don't be trapped by dogma – which is living with the results of other people's thinking.", 'Steve Jobs', new Date(2019,4,1)),
+   new Quote (5, "Life is what happens when you're busy making other plans.", 'John Lennon', new Date(2019,3,1)),
+   new Quote (6, "If you look at what you have in life, you'll always have more. If you look at what you don't have in life, you'll never have enough.", 'Oprah Winfrey', new Date(2020,1,1)),
   ];
 
   toggleDetails(index){
